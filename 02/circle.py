@@ -1,7 +1,7 @@
 from math import pi as PI
 
 class Circle():
-    def __init__(self, radius: float = 1.0, color: str = "red"):
+    def __init__(self, radius: float = 1.0, color: str = "red") -> None:
         self.__radius = radius
         self.__color = color
 
@@ -17,7 +17,7 @@ class Circle():
     def setColor(self, color: str) -> None:
         self.__color = color
     
-    def toString(self):
+    def toString(self) -> dict:
         return {"class": self.__class__.__name__, "radius": self.__radius, "color": self.__color}
 
     def getArea(self) -> float:
